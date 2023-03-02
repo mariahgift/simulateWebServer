@@ -1,0 +1,17 @@
+<div class="add">
+    <p>Please fill in the fields</p>
+    <p *ngIf="successMessage">Note: {{successMessage}}</p>
+    <label for="contact-name">Contact name </label>
+    <input id="contact-name" type="text" #contactName placeholder="Enter full name" />
+<br> <br>
+    <label for="contact-number">Contact number </label>
+    <input id="contact-number" type="text" #contactNumber placeholder="Enter phone number"/>
+  <br>
+
+    <button type="button" class="success-button" (click)="addContact(contactName.value, contactNumber.value)">
+      Create new contact
+    </button>
+<br>
+  <p id="back" (click)="goBack()">Go back to Main page</p>
+</div>
+

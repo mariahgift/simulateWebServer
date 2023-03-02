@@ -1,0 +1,45 @@
+#add-contact {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.contact-detail {
+    text-decoration: none;
+    margin: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+}
+
+.contacts {
+    width: 40%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgb(235, 234, 234);
+    transition: 0.3s;
+    background-color: aliceblue;
+}
+
+.contacts:hover {
+    box-shadow: 0 8px 16px rgb(235, 234, 234);
+}
+
+img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+

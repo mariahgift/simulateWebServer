@@ -1,0 +1,14 @@
+<div class="update" *ngIf="contact">
+    <p>Update details <br> id:{{contact.id}} <br> name: {{contact.contactName }} </p>
+    <p *ngIf="successMessage">Note: {{successMessage}}</p>
+
+    <label for="contact-name">Contact name </label>
+    <input type="text" id="contact-name" [(ngModel)]="contact.contactName" placeholder="Change full name" />
+<br> <br>
+    <label for="contact-number">Contact number </label>
+    <input type="text" id="contact-number" [(ngModel)]="contact.contactNumber" placeholder="Change phone number"/>
+  <br>
+    <button type="button" class="success-button"  (click)="save()">Save</button>
+<br>
+  <p id="back" (click)="goBack()">Go back to Main page</p>
+</div>

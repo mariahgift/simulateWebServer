@@ -1,0 +1,27 @@
+<nav>
+  <button id="add-contact" routerLink="/addContact">Add Contact</button>
+</nav>
+
+<div>
+    <div class="contacts" *ngFor="let contact of contacts" >
+        <img src="../../../assets/img/profile.png" alt="photo">
+        <div class="contact-deta">
+            <span>Id: </span>
+            {{contact.id}}
+            <br>
+            
+            <span>Full name:</span>
+             {{contact.contactName}}
+
+             <br>
+             <span>Phone number: </span>
+              {{contact.contactNumber}}
+        </div>
+        <button routerLink="/detail/{{contact.id}}">Update</button>
+        <button type="button" class="delete" title="delete contact" (click)="delete(contact)"> Delete</button>
+      </div>
+</div>
+
+
+
+
