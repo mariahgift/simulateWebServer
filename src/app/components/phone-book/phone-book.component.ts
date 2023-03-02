@@ -19,24 +19,9 @@ export class PhoneBookComponent implements OnInit {
     this.getContacts();
   }
 
-  // onSelect(contact: Contact): void {
-  //   this.selectedContact = contact;
-  //   this.messageService.addContact(`PhoneBookComponent: Selected contact id = ${contact.id}`)
-  // }
-
   getContacts(): void {
     this.contactService.getContacts()
     .subscribe(contacts => this.contacts = contacts);
-  }
-
-  addContact(contactName: string, contactNumber: string): void {
-    contactName = contactName.trim();
-    contactNumber = contactNumber.trim();
-    if (!contactName) { return; }
-    this.contactService.addContact({ contactName, contactNumber } as Contact)
-      .subscribe(contact => {
-        this.contacts.push(contact);
-      });
   }
 
   delete(contact: Contact): void {

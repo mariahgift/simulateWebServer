@@ -26,7 +26,7 @@ export class AddContactComponent {
       .subscribe(contact => {
         this.contacts.push(contact);
       });
-      this.successMessage = "New contact successfully added!";
+      this.successMessage = "New contact successfully added.";
   }
 
   goBack(): void {
